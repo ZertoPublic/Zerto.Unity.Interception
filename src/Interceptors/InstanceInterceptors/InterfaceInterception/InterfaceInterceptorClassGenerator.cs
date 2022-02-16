@@ -44,7 +44,14 @@ namespace Unity.Interception.Interceptors.InstanceInterceptors.InterfaceIntercep
             }
 
             AssemblyName assemblyName = new AssemblyName("Unity_ILEmit_InterfaceProxies");
-            assemblyName.KeyPair = new StrongNameKeyPair(pair);
+            try
+            {
+                assemblyName.KeyPair = new StrongNameKeyPair(pair);
+            }
+            catch (PlatformNotSupportedException)
+            {
+                // StrongNameKeyPair instantiation is not supported under .NET 6.0
+            }
 
             AssemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(
                 assemblyName,
