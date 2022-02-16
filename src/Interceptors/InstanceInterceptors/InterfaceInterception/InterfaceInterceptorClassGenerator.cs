@@ -43,8 +43,11 @@ namespace Unity.Interception.Interceptors.InstanceInterceptors.InterfaceIntercep
                 pair = ms.ToArray();
             }
 
+            AssemblyName assemblyName = new AssemblyName("Unity_ILEmit_InterfaceProxies");
+            assemblyName.KeyPair = new StrongNameKeyPair(pair);
+
             AssemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(
-                new AssemblyName("Unity_ILEmit_InterfaceProxies") { KeyPair = new StrongNameKeyPair(pair) },
+                assemblyName,
 #if DEBUG_SAVE_GENERATED_ASSEMBLY
                 AssemblyBuilderAccess.RunAndSave);
 #else
