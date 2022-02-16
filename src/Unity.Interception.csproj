@@ -3,8 +3,8 @@
   <Import Project="..\package.props" />
 
   <PropertyGroup>
-    <FileVersion>$(Version).0</FileVersion>
-    <AssemblyVersion>$(Version).0</AssemblyVersion>
+    <FileVersion>$(Version).1</FileVersion>
+    <AssemblyVersion>$(Version).1</AssemblyVersion>
     <PackageId>Zerto.Unity.Interception</PackageId>
     <Description>Unity Interception</Description>
     <Copyright>Copyright © .NET Foundation and Contributors. All Rights Reserved</Copyright>
