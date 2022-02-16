@@ -5,12 +5,12 @@
   <PropertyGroup>
     <FileVersion>$(Version).0</FileVersion>
     <AssemblyVersion>$(Version).0</AssemblyVersion>
-    <PackageId>Unity.Interception</PackageId>
+    <PackageId>Zerto.Unity.Interception</PackageId>
     <Description>Unity Interception</Description>
     <Copyright>Copyright © .NET Foundation and Contributors. All Rights Reserved</Copyright>
-    <PackageProjectUrl>https://github.com/unitycontainer/unity</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/unitycontainer/unity</RepositoryUrl>
-    <PackageLicenseUrl>https://github.com/unitycontainer/unity/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ZertoPublic/Zerto.Unity.Interception</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ZertoPublic/Zerto.Unity.Interception</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/ZertoPublic/Zerto.Unity.Interception/blob/main/LICENSE</PackageLicenseUrl>
     <PackageIconUrl>https://avatars1.githubusercontent.com/u/12849707</PackageIconUrl>
     <PackageTags>Unity Container unitycontainer Microsoft.Practices.Unity IoC Interception</PackageTags>
     <RepositoryType>git</RepositoryType>
